@@ -99,6 +99,16 @@
   color: white;
 }
 
+.btn-primary-custom:active {
+  background-color: #8d8af0; /* 더 어두운 톤 */
+  color: white;
+}
+
+.btn-secondary-custom:active {
+  background-color: #b0d8ea; /* 더 어두운 톤 */
+  color: white;
+}
+
 /* placeholder */
 input::placeholder {
   color: #b0b0b0;
