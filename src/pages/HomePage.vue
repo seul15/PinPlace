@@ -1,6 +1,7 @@
 <template>
   <div class="d-flex justify-content-center min-vh-100">
     <div class="scaled-wrapper">
+      <SearchBar />
       <div id="map" class="map-container"></div>
     </div>
   </div>
@@ -9,6 +10,7 @@
 <script setup>
 import { onMounted } from 'vue'
 const kakaoApiKey = import.meta.env.VITE_KAKAO_MAP_API_KEY
+import SearchBar from '@/components/layout/SearchBar.vue'
 
 onMounted(() => {
   if (window.kakao && window.kakao.maps) {
