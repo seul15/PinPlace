@@ -39,14 +39,10 @@ const navs = [
 ]
 
 function goToTab(navId, targetRoute) {
-  if (currentNav.value !== navId) {
-    navStore.setNav(navId)
-    setTimeout(() => {
-      if (route.name !== targetRoute) {
-        router.push({ name: targetRoute })
-      }
-    }, 100)
-  }
+  navStore.setNav(navId)
+  setTimeout(() => {
+    router.push({ name: targetRoute })
+  }, 100)
 }
 </script>
 
